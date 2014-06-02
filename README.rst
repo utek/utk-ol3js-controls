@@ -11,7 +11,7 @@ More will come as I'll be needing them.
 Usage
 ----------
 
-See example
+See examples
 
 
 Building

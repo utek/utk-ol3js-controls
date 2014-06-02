@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://ol3js.org/en/master/css/ol.css" type="text/css">
+    <link rel="stylesheet" href="../build/css/main.css" type="text/css">
+    <style>
+        ._0 {
+      background: rgba(0, 165, 0, 1.0);
+    }
+    ._1 {
+      background: rgba(165, 165, 0, 1.0);
+    }
+    ._2 {
+      background: rgba(255, 165, 0, 1.0);
+    }
+    ._3 {
+      background: rgba(165, 0, 0, 1.0);
+    }
+    </style>
+    <script src="http://ol3js.org/en/master/build/ol.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8" src="../build/js/controls.js"></script>
+  </head>
+  <body>
+    <div class="map" id="map" height="500">
+    </div>
+    <script>
+      /* Legend items */
+      var legend = [{
+        name: "Element 1",
+        class: "_0"
+      }, {
+        name: "Element 2",
+        class: "_1"
+      }, {
+        name: "Element 3",
+        class: "_2"
+      }, {
+        name: "Element 4",
+        class: "_3"
+      }];
+      /* Map creation */
+      var osm = new ol.layer.Tile({
+        source: new ol.source.OSM()
+      });
+      var map = new ol.Map({
+        controls: ol.control.defaults().extend([
+          new utk.Legend({
+            elements: legend
+          })
+        ]),
+        target: "map",
+        projection: "EPSG:900913",
+        layers: [osm],
+        view: new ol.View2D({
+          center: ol.proj.transform([19, 52], 'EPSG:4326', "EPSG:900913"),
+          maxZoom: 19,
+          zoom: 7
+        })
+      });
+    </script>
+  </div>
+</body>
+</html>

@@ -7,7 +7,7 @@ utk.Legend = function(opt_options) {
   for (var i = 0; i < options.elements.length; i++) {
     var div = document.createElement('div');
     div.innerHTML = '<span class="'+options.elements[i].class+
-    ' legend-element">&nbsp;&nbsp;</span><strong>'+options.elements[i].name+'</strong>';
+    ' utk-legend-element">&nbsp;&nbsp;</span><strong>'+options.elements[i].name+'</strong>';
     elements.push(div);
   }
 
@@ -15,7 +15,7 @@ utk.Legend = function(opt_options) {
 
   /* creating legend box */
   var element = document.createElement('div');
-  element.className = 'legend ol-unselectable';
+  element.className = 'utk-legend ol-unselectable';
   for (i = 0; i < elements.length; i++) {
     element.appendChild(elements[i]);
   }
