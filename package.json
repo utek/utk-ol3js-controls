@@ -1,0 +1,27 @@
+{
+  "name": "utk-ol3js-controls",
+  "version": "0.1.0",
+  "description": "Custom controls for OpenLayers3",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/utek/utk-ol3js-controls.git"
+  },
+  "keywords": [
+    "lib"
+  ],
+  "author": "Łukasz Bołdys",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "~3.6.0",
+    "gulp-csslint": "~0.1.3",
+    "gulp-jshint": "~1.5.3",
+    "gulp-uglify": "~0.3.0"
+  },
+  "dependencies": {
+    "gulp-minify-css": "~0.3.4"
+  }
+}

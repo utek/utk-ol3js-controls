@@ -12,3 +12,16 @@ Usage
 ----------
 
 See example
+
+
+Building
+-------------
+
+Install dependencies:
+
+    npm install
+
+
+Build using gulp:
+
+    gulp build

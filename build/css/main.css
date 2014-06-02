@@ -1,0 +1,6 @@
+.utk-legend{position:absolute;top:65px;left:8px;background:rgba(255,255,255,.4);border-radius:4px;padding:2px}
+.ol-touch .utk-legend{top:80px}
+.utk-legend-element{display:inline-block;width:20px;height:20px;border:1px solid #000;border-radius:11px;margin:2px}
+.utk-legend div{display:block;color:#fff;font-size:14px;font-family:'Lucida Grande',Verdana,Geneva,Lucida,Arial,Helvetica,sans-serif;font-weight:700;margin:1px;padding-right:4px;text-decoration:none;text-align:left;border-radius:2px;height:24px;background:rgba(0,60,136,.5)}
+.ol-touch .utk-legend a{font-size:20px;height:30px;width:30px;line-height:26px}
+.utk-legend div:hover{background:rgba(0,60,136,.7)}

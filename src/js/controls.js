@@ -9,16 +9,16 @@ utk.Legend = function(opt_options) {
     div.innerHTML = '<span class="'+options.elements[i].class+
     ' legend-element">&nbsp;&nbsp;</span><strong>'+options.elements[i].name+'</strong>';
     elements.push(div);
-  };
+  }
 
   var this_ = this;
 
   /* creating legend box */
   var element = document.createElement('div');
   element.className = 'legend ol-unselectable';
-  for (var i = 0; i < elements.length; i++) {
+  for (i = 0; i < elements.length; i++) {
     element.appendChild(elements[i]);
-  };
+  }
 
   ol.control.Control.call(this, {
     element: element,
