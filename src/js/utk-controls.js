@@ -1,4 +1,9 @@
 var utk = utk || {};
+
+var utk_dummy_callback = function (value) {
+  console.log(value);
+};
+
 utk.Legend = function (opt_options) {
   var options = opt_options || {
     elements: []
@@ -24,3 +29,21 @@ utk.Legend = function (opt_options) {
   });
 };
 ol.inherits(utk.Legend, ol.control.Control);
+
+// Input stump
+utk.Input = function (opt_options) {
+  var options = opt_options || {
+    callback: utk_dummy_callback
+  };
+  var this_ = this;
+  var container = document.createElement('div');
+  container.className = 'utk-input ol-unselectable';
+
+  var div = document.createElement('div');
+  div.innerHTML = '<input type="text"></input>';
+  container.appendChild(div);
+  ol.control.Control.call(this, {
+    element: container,
+    target: options.target
+  });
+};
